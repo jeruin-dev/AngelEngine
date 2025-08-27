@@ -1,6 +1,5 @@
-#include <iostream>
-
+#include <fmt/base.h>
 int main(){
-    std::cout << "\n\tHola Mundo\n" << std::endl;
+    fmt::println("\n\t Hola Mundo\n");
     return 0;
 }
