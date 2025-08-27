@@ -1,3 +1,0 @@
-/home/jeruin/Desktop/dev/AngelEngine/build/CMakeFiles/AngelEngine.dir
-/home/jeruin/Desktop/dev/AngelEngine/build/CMakeFiles/edit_cache.dir
-/home/jeruin/Desktop/dev/AngelEngine/build/CMakeFiles/rebuild_cache.dir
