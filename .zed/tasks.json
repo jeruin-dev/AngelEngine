@@ -62,12 +62,12 @@
     "cwd": "$ZED_WORKTREE_ROOT/build/Release"
   },
   {
-    "label": "Genered Compile Cammands Debug",
+    "label": "trigger Compile Commands Debug",
     "command": "cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .",
     "cwd": "$ZED_WORKTREE_ROOT/build/Debug"
   },
   {
-    "label": "Genered Compile Cammands Release",
+    "label": "trigger Compile Commands Release",
     "command": "cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .",
     "cwd": "$ZED_WORKTREE_ROOT/build/Release"
   }
