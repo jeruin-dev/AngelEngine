@@ -9,8 +9,10 @@ find_package(fmt CONFIG REQUIRED)
 
 find_package(Angelscript CONFIG REQUIRED)
 
-add_executable(${PROJECT_NAME} "main.cpp")
+add_executable(${PROJECT_NAME} "source/main.cpp")
 
-target_link_libraries(${PROJECT_NAME} fmt::fmt Angelscript::angelscript)
+target_include_directories(${PROJECT_NAME} PRIVATE "external/angelscript/add_on/")
+
+target_link_libraries(${PROJECT_NAME} fmt::fmt Angelscript::angelscript )
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
