@@ -1,2 +1,3 @@
 build
-.zed
+.zed/settings.json
+.cache
