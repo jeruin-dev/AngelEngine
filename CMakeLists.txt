@@ -5,11 +5,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(AngelEngine LANGUAGES CXX)
 
+set(add_on
+    external/angelscript/add_on/scriptstdstring/scriptstdstring.cpp
+    external/angelscript/add_on/scriptstdstring/scriptstdstring.h
+    external/angelscript/add_on/scriptstdstring/scriptstdstring_utils.cpp
+    external/angelscript/add_on/scriptbuilder/scriptbuilder.h
+    external/angelscript/add_on/scriptbuilder/scriptbuilder.cpp
+    external/angelscript/add_on/scriptarray/scriptarray.cpp
+)
+
 find_package(fmt CONFIG REQUIRED)
 
 find_package(Angelscript CONFIG REQUIRED)
 
-add_executable(${PROJECT_NAME} "source/main.cpp")
+add_executable(${PROJECT_NAME} "source/main.cpp" ${add_on})
 
 target_include_directories(${PROJECT_NAME} PRIVATE "external/angelscript/add_on/")
 
