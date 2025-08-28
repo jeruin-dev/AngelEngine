@@ -3,7 +3,7 @@
     "clangd": {
       "binary": {
         "arguments": [
-          "--compile-commands-dir=build/Release",
+          "--compile-commands-dir=build/Debug",
           "--log=verbose",
           "--function-arg-placeholders=0",
           "--background-index"
