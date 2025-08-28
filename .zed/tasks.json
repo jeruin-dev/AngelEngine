@@ -1,0 +1,64 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Example:
+[
+  {
+    "label": "Config Conan Debug",
+    "command": "conan",
+    "args": [
+      "install",
+      ".",
+      "--build=missing",
+      "--profile:host",
+      "Clang_Debug"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Config Conan Release",
+    "command": "conan",
+    "args": [
+      "install",
+      ".",
+      "--build=missing",
+      "--profile:host",
+      "Clang_Release"
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Config Cmake Debug",
+    "command": "cmake",
+    "args": ["--preset", "conan-debug"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+
+  {
+    "label": "Config Cmake Release",
+    "command": "cmake",
+    "args": ["--preset", "conan-Release"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Build Cmake Debug",
+    "command": "cmake",
+    "args": ["--build", "build/Debug"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Build Cmake Release",
+    "command": "cmake",
+    "args": ["--build", "build/Release"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Run Debug",
+    "command": "./AngelEngine",
+    "cwd": "$ZED_WORKTREE_ROOT/build/Debug"
+  },
+  {
+    "label": "Run Release",
+    "command": "./AngelEngine",
+    "cwd": "$ZED_WORKTREE_ROOT/build/Release"
+  }
+]
