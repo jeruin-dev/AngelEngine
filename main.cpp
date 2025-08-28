@@ -1,5 +1,7 @@
 #include <fmt/base.h>
+
 int main(){
-    fmt::println("\n\t Hola Mundo\n");
+
+    fmt::print("Hello, world!\n");
     return 0;
 }
