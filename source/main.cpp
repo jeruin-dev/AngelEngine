@@ -6,6 +6,8 @@
 #include <scriptbuilder/scriptbuilder.h>
 #include <string>
 
+#include "headers/AngelEngine.hpp"
+
 void MessageCallback(const asSMessageInfo *msg, void *param){
   const char *type = "ERR ";
   if( msg->type == asMSGTYPE_WARNING )
@@ -20,6 +22,8 @@ void print(std::string &msg ){
 }
 
 int main(){
+
+    auto angel = new AngelEngine;
 
     asIScriptEngine *engine = asCreateScriptEngine();
 
