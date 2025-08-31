@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Run Debug",
+    "build": {
+      "command": "cmake",
+      "args": ["--build", "build/Debug", "--config=debug"],
+      "cwd": "$ZED_WORKTREE_ROOT"
+    },
+    "adapter": "GDB",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/build/Debug/AngelEngine"
+  }
+]
